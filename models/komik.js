@@ -13,3 +13,7 @@ module.exports = {sequelize, DataTypes} => {
             type: DataTypes.TEXT,
             allowNull: true
         },
+        tahun_terbit: {
+            type: DataTypes.INTEGER,
+            allowNull: true
+        },
