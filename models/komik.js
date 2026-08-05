@@ -17,3 +17,7 @@ module.exports = {sequelize, DataTypes} => {
             type: DataTypes.INTEGER,
             allowNull: true
         },
+        penulis_id: {
+            type: DataTypes.INTEGER,
+            allowNull: false
+        },
