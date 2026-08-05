@@ -21,3 +21,14 @@ module.exports = (sequelize, DataTypes) => {
     }, {
         tableName: "penulis",
         timestamps: true
+    });
+
+    Penulis.associate = (models) => {
+        Penulis.hasMany(models.komik, {
+            foreignKey: "penulis_id",
+            as: "komik"
+        });
+    };
+
+    return Penulis;
+};
