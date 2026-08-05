@@ -36,4 +36,6 @@ module.exports = {sequelize, DataTypes} => {
             otherKey: "genre_id",
             as: "genre"
         });
-    }
+    };
+    return Komik;
+};
