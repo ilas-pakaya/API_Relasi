@@ -20,4 +20,13 @@ module.exports = {sequelize, DataTypes} => {
         penulis_id: {
             type: DataTypes.INTEGER,
             allowNull: false
-        },
+        }
+    }, {
+        tableName: "komik",
+        timestamps: true
+    });
+    Komik.associate = (models) => {
+        Komik.belongsTo(models.penulis, {
+            foreignKey: "penulis_id",
+            as: "penulis"
+        });
