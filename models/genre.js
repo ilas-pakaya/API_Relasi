@@ -28,3 +28,6 @@ module.exports = (sequelize, DataTypes) => {
             as: "komik"
         });
     };
+
+    return Genre;
+};
